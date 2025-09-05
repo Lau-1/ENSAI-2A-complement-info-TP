@@ -1,4 +1,4 @@
-from business_object.pokemon.abstract_attack import FixedDamageAttack
+from business_object.pokemon.fixed_damage_attack import FixedDamageAttack
 
 
 class TestFixedDamageAttack:
