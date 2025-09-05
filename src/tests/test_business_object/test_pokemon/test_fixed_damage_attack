@@ -1,0 +1,19 @@
+from business_object.pokemon.abstract_attack import FixedDamageAttack
+
+
+class TestFixedDamageAttack:
+    def compute_damage(self):
+        # GIVEN
+        snorlax = FixedDamageAttack(_power=20, _name="STR", _description="STR")
+
+        # WHEN
+        damage = snorlax.compute_damage(20)
+
+        # THEN
+        assert damage == 20
+
+
+if __name__ == "__main__":
+    import pytest
+
+    pytest.main([__file__])

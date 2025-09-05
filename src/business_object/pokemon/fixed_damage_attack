@@ -1,0 +1,9 @@
+from .abstract_attack import Attack
+
+
+class FixedDamageAttack(Attack):
+    def __init__(self, _power: int, _name: str, _description: str):
+        super().__init__(_power, _name, _description)
+
+    def compute_damage(APkm) -> int:
+        return APkm

@@ -4,7 +4,7 @@
         Returns :
             float : the multiplier
         """
-        if self._type == "Attacker":
+      if self._type == "Attacker":
             multiplier = 1 + (self.speed_current + self.attack_current) / 200
         elif self._type == "Defender":
             multiplier = 1 + (self.attack_current + self.defense_current) / 200
